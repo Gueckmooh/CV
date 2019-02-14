@@ -667,13 +667,20 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \textbf{#1} & \entrylocationstyle{#4}
   \end{tabular*}
-  % \vspace{-.5cm}
   \begin{flushright}
     \begin{minipage}{.95\textwidth}
       ``\emph{#2}''
     \end{minipage}\\
   \end{flushright}
-  #3
+  \begin{spacing}{1}
+    \small
+    #3
+  \end{spacing}
+  \vspace{.1cm}
+}
+
+\newcommand{\cvpublication}[5]{
+  \small\textbf{Publication:} ``\emph{#1}'', #2, #3 - #4, #5
 }
 
 %-------------------------------------------------------------------------------
