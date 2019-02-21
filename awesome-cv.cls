@@ -571,16 +571,22 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \ifempty{#2#3}
-      {\entrytitlestyle{#1} & \entrylocationstyle{#4} \\}
-      {\entrytitlestyle{#1} & \entrylocationstyle{#4} \\
-      \entrypositionstyle{#2} & \entrydatestyle{#3} \\}
+    \ifempty{#3#4}
+      {\entrytitlestyle{\shortstack[l]{#1}} & \entrylocationstyle{#2} \\}
+      {\entrytitlestyle{#1} & \entrylocationstyle{#2} \\
+      \entrypositionstyle{#4} & \entrydatestyle{#3} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
 }
-\newcommand*{\cventrysep}[1]{%
-  \vspace{-.5cm}
-  \Large\sepdatestyle{#1}
+\newcommand*{\cventrysep}[3][3cm]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{2.5cm} R{\textwidth - 2.5cm} }
+    \Large\sepdatestyle{\raisebox{#1}{#2}} &
+                              \begin{minipage}{\textwidth - 2.5cm}
+                                #3
+                              \end{minipage}
+  \end{tabular*}
+  % \vspace{-1cm}
+
 }
 
 % Define an environment for cvsubentry
@@ -664,6 +670,7 @@
 }
 
 \newcommand{\cvinternship}[4]{
+  \vspace{.5cm}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \textbf{#1} & \entrylocationstyle{#4}
   \end{tabular*}
