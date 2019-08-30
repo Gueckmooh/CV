@@ -26,6 +26,7 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 \usepackage{lipsum}
+\usepackage{scrextend}
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
@@ -82,11 +83,103 @@
 \input{cv-sections/education.tex}
 \input{cv-sections/skills.tex}
 
-% \newpage
+\newgeometry{top=3cm, bottom=3cm, left=3cm, right=3cm}
 
-\input{cv-sections/experience.tex}
+\begin{addmargin}{-1cm}
+\cvsection{Motivation}
+\end{addmargin}
 
-%\newpage % Force a new page for looks
+\vspace{1.4cm}
+
+Madame, monsieur,\\
+
+J'ai récemment terminé ma deuxième année de Master d'informatique à
+l'Université Grenoble Alpes et je souhaite effectuer un doctorat en
+contrat CIFRE avec Thales Alenia Space sur le sujet ``Analyse en ligne
+de propriétés temporelles sur SoPCpour plateformes
+satellitaires''. Après le bac j'ai effectué un L1--L2 Mathématiques
+Informatique International puis un L3 Informatique. J'ai poursuivi par
+une première année de Master Informatique et par un M2 MoSIG (Master
+of Science in Informatics at Grenoble).
+
+Mon choix pour un L1--L2 MIN international était motivé par le fait
+que la pratique de l'anglais me paraissait importante si je voulais
+faire de l'informatique dans le futur. En rentrant en licence je
+savais déjà que je voulais travailler dans l'informatique mais je
+n'avais pas encore décidé vers quelle branche me tourner. C'est
+grâce aux enseignants chercheurs passionnés que je me suis intéressé
+à la recherche.
+
+Pour le L3, les choix de l'informatique ou des mathématiques
+appliquées m'étaient offerts et ma décision de finir mon cursus
+licence en informatique était naturel du fait que cette discipline
+m'attirait le plus.
+
+Pendant ma troisième année de licence je me suis inscrit en
+Magistère pour découvrir ce qu'était la réalité du ``monde de la
+recherche'' et savoir si cela pouvait m'intéresser vraiment.
+
+Je suis autant intéressé par les aspects formels de l'informatique
+que par les aspects plus pratiques tels que le système et les
+interactions avec la machine. Laurence Pierre était la responsable
+de l'UE Architectures Logicielles et Matérielles qui est une matière à
+laquelle je porte beaucoup d'intérêt. C'est pour cette raison que
+j'ai cherché mon stage de magistère de L3 auprès d'elle.
+
+J'ai travaillé à TIMA sur un projet visant à automatiser la
+vérification dynamique de propriétés temporelles sur des programmes
+embarqués. Ma mission était de proposer un mécanisme d'observation
+d'évènements dans l'exécution du programme, plus efficace que celui
+déjà implémenté par l'équipe. J'ai pu définir un mécanisme
+d'observation utilisant des interruptions logicielles, faire des
+expérimentations sur plusieurs cartes et spécifier les modifications
+à apporter à l'outil d'instrumentation OSIRIS, de manière à ce qu'il
+puisse mettre en place la nouvelle solution.
+
+Ce stage m'a permis de mieux découvrir le monde de la recherche et
+la rigueur de raisonnement nécessaire. Cela m'a beaucoup plu,
+j'étais enfin sûr de vouloir continuer dans cette voie.
+
+Cette année je continue le Magistère, en plus du TER, sur la suite
+de ce projet. Le mécanisme utilisant les interruptions logicielles
+est peu approprié en présence d'un système d'exploitation, nous
+étendons donc la méthode avec une solution alternative. Après avoir
+spécifié les modifications à apporter à OSIRIS, j'aurai à le
+modifier pour qu'il puisse mettre en place les différents mécanismes
+d'observation, puis à faire des tests comparatifs.
+
+Cette nouvelle expérience me fait prendre conscience de l'importance
+de la modélisation et la vérification de programmes et systèmes et
+que ce domaine m'attire beaucoup. L'année prochaine, je souhaite
+faire un Master 2 MOSIG en spécialité High confidence Embedded and
+Cyber-physical Systems car le programme de ce parcours me permettra
+d'approfondir mes connaissances dans ce domaine. Il est prévu que je
+continue en stage de fin de Master et en Magistère à TIMA avec
+Laurence Pierre dans la continuité des précédents travaux.
+
+Mon expérience à TIMA ainsi que les options que j'ai choisies
+pendant ma première année de master m'ont permis d'améliorer mes
+compétences en conception logicielle et matérielle notamment grâce à
+l'option Introduction à la modélisation et à la vérification des
+systèmes numériques donnée par Laurence Pierre. J'ai également
+apprécié la composante plus formelle de l'informatique avec les
+cours de complexité et de calculabilité pendant lesquels j'ai
+compris l'importance d'avoir une base solide dans la théorie qui
+fonde l'informatique.
+
+La vérification des systèmes cyber-physiques est un domaine qui
+entremêle formalisme et interactions avec la machine et le monde
+physique, deux sujets qui m'intéressent énormément. Je souhaite donc
+poursuivre en thèse après mon Master sous la supervision de Laurence
+Pierre dans ce domaine qui me passionne. C'est pour cela que je fais
+la demande de bourse de Master~2 Persyval-Lab.
+
+Merci pour votre temps et votre considération.
+
+
+% \input{cv-sections/experience.tex}
+
+% \newpage % Force a new page for looks
 
 % \input{cv-sections/extracurricular.tex}
 % \input{cv-sections/honors.tex}
@@ -94,6 +187,6 @@
 % \input{cv-sections/writing.tex}
 % \input{cv-sections/committees.tex}
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \end{document}
