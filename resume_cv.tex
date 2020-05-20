@@ -26,6 +26,7 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 \usepackage{lipsum}
+\usepackage{scrextend}
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
@@ -51,19 +52,19 @@
 \address{11 rue du bois taillis, 38610 Gi\`eres, France}
 \mobile{(+33) 6 28 82 34 84}
 
-\email{enzo.brignon@etu.univ-grenoble-alpes.fr}
+\email{brignon.enzo@protonmail.com}
 % \homepage{www.posquit0.com}
 \github{gueckmooh}
-% \linkedin{posquit0}
+\linkedin{enzo-brignon-25a24119a}{Enzo Brignon}
 %\skype{skypeid}
 %\stackoverflow{SOid}{SOname}
 %\twitter{@twit}
-%\linkedin{linkedin name}
+% \linkedin{Enzo Brignon}
 %\reddit{reddit account}
 %\xing{xing name}
 %\extrainfo{test} % Other text you want to include on this line
 
-\position{Étudiant} % Your expertise/fields
+\position{} % Your expertise/fields
 % \quote{``Make the change that you want to see in the world."} % A quote or statement
 
 \makecvfooter{\today}{Enzo Brignon~~~·~~~CV}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
@@ -79,21 +80,14 @@
 %	Each section is imported separately, open each file in turn to modify content
 %----------------------------------------------------------------------------------------
 
-\input{cv-sections/education.tex}
-\input{cv-sections/skills.tex}
+\vspace{1cm}
 
-% \newpage
-
+\input{cv-sections/main_skills.tex}
 \input{cv-sections/experience.tex}
+\input{cv-sections/skills.tex}
+\newpage
+\input{cv-sections/education.tex}
 
-%\newpage % Force a new page for looks
-
-% \input{cv-sections/extracurricular.tex}
-% \input{cv-sections/honors.tex}
-% \input{cv-sections/presentation.tex}
-% \input{cv-sections/writing.tex}
-% \input{cv-sections/committees.tex}
-
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \end{document}
